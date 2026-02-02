@@ -1,0 +1,68 @@
+### Get all users
+
+GET http://localhost:4000/user-api/users
+
+### Create user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+  "id":100,
+  "name":"nanda",
+  "age":20
+}
+
+### Update user
+PUT http://localhost:4000/user-api/users/200
+Content-Type: application/json
+
+{
+  "id":200,
+  "name":"shiva",
+  "age":25
+}
+
+### Get user by id
+GET http://localhost:4000/user-api/users/200
+
+### Delete user
+DELETE http://localhost:4000/user-api/users/100
+
+### Get all products
+GET http://localhost:4000/product-api/products
+
+### Create product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+  "productId":1,
+  "name":"Laptop",
+  "price":100000,
+  "brand":"Dell G15"
+}
+
+### Create another product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+  "productId":2,
+  "name":"Mobile",
+  "price":30000,
+  "brand":"Samsung S23"
+}
+
+### Get product by id
+GET http://localhost:4000/product-api/products/1
+
+### Update product
+PUT http://localhost:4000/product-api/products/1
+Content-Type: application/json
+
+{
+  "price":58000
+}
+
+### Delete product
+DELETE http://localhost:4000/product-api/products/2

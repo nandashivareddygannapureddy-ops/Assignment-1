@@ -1,0 +1,50 @@
+//READ ALL USERS REQUEST
+###
+GET http://localhost:4000/api/users
+###REAd user by 
+GET http://localhost:4000/api/users/
+###
+POST http://localhost:4000/api/users
+Content-Type:application/json
+
+{
+    "username":"shiva",
+    "password":"nanda",
+    "age":21
+}
+###update the user
+PUT http://localhost:4000/api/users/
+Content-Type:application/json
+
+{
+    "username":"vinay",
+    "password":"dicks",
+    "age":23
+}
+###delete user by id
+DELETE http://localhost:4000/api/users/
+
+###get all products
+GET http://localhost:4000/api/products
+
+###get products by id
+POST http://localhost:4000/api/products
+Content-Type:application/json
+
+{
+    "pname":"mobile",
+    "pmodel":"iqoo",
+    "productPrice":20000
+}
+###get product using id
+GET http://localhost:4000/api/products/
+
+###update products using product id
+PUT http://localhost:4000/api/products/
+Content-Type:application/json
+
+{
+    "pname":"laptop",
+    "pmodel":"dell",
+    "productPrice":40000
+}
